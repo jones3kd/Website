@@ -1,0 +1,351 @@
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -82px 0;
+  /* Pad bottom by footer height */
+  padding: 0 0 0px 0;
+}
+
+/* Set the fixed height of the footer here */
+
+
+#wrap > .center-container {
+  padding: 5px 0 0 0; /*change padding to change the spaces between pages*/
+  margin:0;
+}
+
+
+.center-container {
+  height:100%;
+  	
+}
+
+.center-row {
+  height:100%;
+  background-image:url('/assets/example/bg_cloud.jpg');
+  background-size:cover;
+  color:#fff;
+  background: #666;
+}
+
+#home {
+	
+	height:100%;
+	width: 100%;
+}
+
+.self {
+
+  border: 2px black;
+}
+.img-center {
+	margin: 0 auto;	
+	padding: 100px 0 0 0;
+}
+
+#center-page {
+	background:  50% 0 fixed;
+		height: auto;
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    padding: 100px 0;
+		    color: #fff;	
+}
+
+.about {
+    padding: 30px 20px;
+	
+}
+
+.containerSkills {
+	
+}
+#skills {
+	background: url(earth.jpg) 50% 0 fixed;
+		height: auto;
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 10% 0;
+		    color: #fff;
+}
+
+.skillsItem {
+	border-style: solid;
+    border-width: 1px;
+	margin-bottom: 50px;	
+}
+
+.skillsRow {
+	vertical-align: middle;
+		
+}
+
+.item {
+	background: #333;	
+}
+
+.clickable {
+
+  cursor: pointer;
+}
+.exp-effect {
+	position:relative;
+	background-color: #333333;
+}
+
+.caption {
+	top:0;
+    left:10;
+    position: absolute;	
+	
+}
+
+.exp-effect img {
+	opacity: 0.5;
+	max-width: none;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.exp-effect:hover img {
+  opacity: 0.7;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.exp-effect h4 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+.exp-effect h4::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+.exp-effect:hover h4::after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.exp-effect p {
+  padding: 1em 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+.exp-effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.modal-dialog {
+	width: 100%;
+      height: 100%;
+      padding: 0;
+      margin:0;
+}
+
+.modal-content {   
+ 	  height: 100%;
+      border-radius: 0;
+      color:white;
+      overflow:auto;
+}
+
+.modal-title, .modal-body {
+  color: black;
+}
+
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+.modal-body-lists {
+  font-size: 17px;
+
+}
+.modal.fade:not(.in).right .modal-dialog {
+    -webkit-transform: translate3d(125%, 0, 0);
+    transform: translate3d(125%, 0, 0);
+}
+
+/*project slide*/
+
+.proj-effect {
+
+  background-color: #d3d3d3;
+}
+
+.modalll {
+
+  
+}
+
+.proj-effect:hover img {
+  opacity: 2;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-filter: grayscale(1) invert(0.5) hue-rotate(90deg);
+
+}
+.comppic {
+
+  padding-top: 10px;
+}
+
+/*---------------*/
+/***** Zoe *****/
+/*---------------*/
+
+.proj-effect Zcaption {
+  top: auto;
+  bottom: 0;
+  padding: 1em;
+  height: 3.75em;
+  background: #fff;
+  color: #3c4a50;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.proj-effect h3 {
+  float: left;
+  padding-top: 10px;
+}
+
+.proj-effect p.icon-links a {
+  float: right;
+  color: #3c4a50;
+  font-size: 1.4em;
+  opacity: 0;
+}
+
+.proj-effect:hover p.icon-links a {
+    opacity: 1;
+  }
+
+.proj-effect:hover p.icon-links a:hover,
+.proj-effect:hover p.icon-links a:focus {
+  color: #252d31;
+}
+
+.proj-effect p.description {
+  position: absolute;
+  bottom: 8em;
+  padding: 2em;
+  color: #fff;
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+}
+
+
+
+.proj-effect h3,
+.proj-effect p.icon-links a {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,200%,0);
+  transform: translate3d(0,200%,0);
+}
+
+.proj-effect p.icon-links a span::before {
+  display: inline-block;
+  padding: 8px 10px;
+  font-family: 'feathericons';
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye::before {
+  content: '\e000';
+}
+
+.icon-paper-clip::before {
+  content: '\e001';
+}
+
+.icon-heart::before {
+  content: '\e024';
+}
+
+.proj-effect h3 {
+  display: inline-block;
+
+}
+
+.proj-effect:hover p.description {
+  opacity: 1;
+}
+
+.proj-effect:hover Zcaption,
+.proj-effect:hover h3,
+.proj-effect:hover p.icon-links a {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.proj-effect:hover h3 {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  color: #474747;
+}
+
+.proj-effect:hover p.icon-links a:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.proj-effect:hover p.icon-links a:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.proj-effect:hover p.icon-links a:first-child {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.contactItems a{
+  text-decoration: none;
+  color: white;
+}
+
+.contactItems:hover a{
+  color: #a8a8a8;
+}
