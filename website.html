@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Kelsey Jones</title>
 
 
@@ -60,9 +61,11 @@
     
       <div class="container">
       	<div id="home">
-        	<img src="self.jpg" class="self img-rounded img-responsive img-center">
+          <div class="col-md-6 col-md-offset-3">
+        	<img style="max-width: 50%;" src="self.jpg" class="self img-rounded img-responsive img-center">
 
-        	<h1 class= "text-center">Curious Computer Scientist, Persistant Programmer, Language Lover</h1>
+        	<h1 class= "text-center">Curious Computer Scientist,<br>Persistant Programmer,<br> Language Lover</h1>
+          </div>
         </div>
       </div>
       <!--end of container-->
@@ -237,20 +240,16 @@
         
         <div id="center-page">
         
-          <div class="row">
-              <div class="exp-effect col-lg-3 col-lg-offset-4">
+          <div class="row ">
+              <div class="col-xs-3 col-xs-offset-3 text-center">
               	<div class="model-click clickable" data-toggle="modal" data-target="#modal1">
                   
-                    <img src="vwlogo.png" alt="Volkswagen logo" class=" img-responsive" />
-                    
-                    <div class ="caption">
-                    
-                      <h4 class="work-title">Volkswagen Group of America <span></span> </h4>
-                      <p class="work-cap">Jr. Business Analyst</p>
-                    
-                    <!-- make the sarah hover transition-->
-                    </div>
+                  <h3>Volkswagen Group of America</h4>
+                  <h6>Jr. Business Analyst</p>
+                  <img src="vwlogo.png" alt="Volkswagen logo" class=" img-responsive" />                    
+
                 </div>
+              </div>
                 
                 <!--Modal-->
                 <div class="modal fade right" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -290,26 +289,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                
-                <!--end of Modal-->
-              </div>
+                </div><!--end of Modal-->
+
               
 
               
-              <div class="exp-effect col-lg-3">
+              <div class="col-xs-3 text-center">
               	  <div class="model-click clickable" data-toggle="modal" data-target="#modal2">
-                  
-                    <img src="sg-logo.png" alt="Volkswagen logo" class=" img-responsive" />
-                    
-                    <div class ="caption">
-                    
-                      <h4 class="work-title">Study Group <span></span> </h4>
-                      <p class="work-cap">Student Assistant</p>
-                    
-                    <!-- make the sarah hover transition-->
-                    </div>
+                      <h3>Study Group <span></span> </h3>
+                      <h6>Student Assistant</h6>
+                      <img src="sg-logo.png" alt="Volkswagen logo" class="img-border img-responsive" />
+                  </div>
                 </div>
 
                 <!--Modal-->
@@ -347,10 +337,6 @@
                 
                 <!--end of Modal-->
               </div>
-
-
-              </div>
-
         </div><!--end of center-page-->
       </div>
       <!--end of container-->
@@ -376,52 +362,82 @@
         <div id="center-page">
         
           <div class="row">
-              <div class="proj-effect col-lg-3 col-lg-offset-4">
-                <div class="modalll">
-                  <!--make this a modal later-->
-                    <img src="webpic.png" alt="website code logo" class=" img-responsive comppic" />
-                    
-                    <div class ="Zcaption">
-                    
-                      <h3 class="github">Personal Portfolio Website<span></span> </h3>
-                      <p class="icon-links">
-                        <a href="https://github.com/jones3kd/Website">Github</span></a>
+              <div class="proj-effect col-lg-6 col-lg-offset-3">
+                <div role="tabpanel">
 
-                      </p>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#anki" aria-controls="anki" role="tab" data-toggle="tab">Anki Add-On</a></li>
+                    <li role="presentation"><a href="#website" aria-controls="website" role="tab" data-toggle="tab">Portfolio Website</a></li>
+                  </ul>
 
-                      <p class="description upwards">This website was a project I worked on in order to learn web development and display my skills, experience and projects. I created this website with HTML, CSS, Bootstrap, JavaScript, and JQuery! <br>
-                      </p>
-                    
-                    <!-- make the zoe hover transition-->
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane tab-info active" id="anki">
+                    <br>
+                    <h5>Summary:    </h5><p>  This is an add-on I'm creating for an open-source software available on Github called Anki. It's spaced repetition flashcard program. The add-on I'm creating adds definitions to German and Japanese flashcards from the cards the user has selected.</p>
+
+                    <br><br>
+                    <h5>Used:    </h5><p>Python</p>
+                    <br><br>
+                    <h5>Progress:    </h5><p>Still working on this!</p>
+                    <br><br>
+                     <div class="col-md-4 col-md-offset-4 text-center">
+                      <div class="col-lg-9">
+                        <div class="proj-github">
+                          <span class="fa-stack fa-3x">
+                          <a href="https://github.com/jones3kd/Anki-Look-up-add-on">
+                                            <i class="fa fa-github fa-stack-2x"></i>
+                          </a>
+
+
+                          </span>
+                          <h5>Check Out My Code!</h5>
+                        
+                         
+
+                         </div>
+                      </div>
+                      </div><!--end of proj-github-->
+                     </div><!--end of tab pane-->
+
+                    <div role="tabpanel" class="tab-pane" id="website">
+                      <br>
+                      <h5>Summary:    </h5><p class="smaller-font">  This is the personal portfolio website I made here! I always wanted to make my own website and I had never taken a class on it but I wanted to develop a website after seeing so many cool ones on http://www.awwwards.com/ and to see if I would like web development myself. So I thought making my own website would be the perfect start and I would continue building from there. 
+
+                      <br><br>&nbsp;&nbsp;&nbsp;This website was pretty fun to make I'll admit but also a tad bit frustrating. I had never used boostrap or html and css much before but I figured I could figure it out. I watched some courses on Udacity, Lynda, tried some simple websites on Codeacademy and read some books about boostrap before and while I was making this website(and of course I googled many things along the way..thank you StackOverflow!! What would I do without you!). It was exciting to create this! For my next project I plan on making a blog and gaining some more back-end web development experience.</p>
+
+                      <br><br>
+                      <h5>Used:    </h5><p>HTML CSS Boostrap JavaScript JQuery</p>
+                      <br><br>
+                      <h5>Progress:    </h5><p>I'll continue to update and add cool transitions and play around with JQuery a bit</p>
+                      <br><br>
+                       <div class="col-md-4 col-md-offset-4 text-center">
+                        <div class="col-lg-9">
+                          <div class="proj-github">
+                            <span class="fa-stack fa-3x">
+                            <a href="https://github.com/jones3kd/Website">
+                                              <i class="fa fa-github fa-stack-2x"></i>
+                            </a>
+
+
+                            </span>
+                            <h5>Check Out My Code!</h5>
+                          
+                           
+
+                           </div>
+                        </div>
+                        </div><!--end of proj-github-->
                     </div>
-                </div>
-              
+
+                  </div>
+
+                </div><!--end of tabpanel-->
+
               </div><!--end of col-->
 
-              <div class = "col-sm-1"></div>
-
-              <div class="proj-effect col-lg-3">
-                <div class="modalll">
-                  <!--make this a modal later-->
-                    <img src="webpic.png" alt="website code logo" class=" img-responsive comppic" />
-                    
-                    <div class ="Zcaption">
-                    
-                      <h3 class="github">Anki Look up Add-on<span></span> </h3>
-                      <p class="icon-links">
-                        <a href="https://github.com/jones3kd/Anki-Look-up-add-on">Github</span></a>
-
-                      </p>
-
-                      <p class="description">An add-on for an open-source software on Github called Anki, a spaced repetition flashcard program. Looks up German, and Japanese words and adds definitions to the selected cards. Python <br></p>
-                    
-                    <!-- make the zoe hover transition-->
-                    </div>
-                </div>
-              
-              </div><!--end of col-->
-
-          </div>
+          </div><!--end of row-->
         
         </div><!--end of center-page-->
       </div>
@@ -446,42 +462,42 @@
             </div>
         </div>
         
-        <div id="center-page">
+        <div id="center-page" class="contact-row">
         
-          <div class="row">
-             <div class="col-md-12 text-center">
-              <div class="contactItems">
-                <span class="fa-stack fa-3x pull-left">
-                                  <i class="fa fa-envelope fa-stack-2x"></i>
-                </span>
-                 <h1 class="contactItems"> <a href="mailto:Kelsey.Jones003@gmail.com">Kelsey.Jones003@gmail.com </a> 
-                 </h1>
+          <div class="row proj-row text-center">
+             <div class="col-lg-12 contact-items">
+                <h1 class="email">
+                  <a  href="mailto:Kelsey.Jones003@gmail.com">Kelsey.Jones003@gmail.com </a> 
+                </h1>
+             </div>
+             <div class="icon-rows ">
+               <div class="contact-icons row">
+                <div class="col-md-2 col-md-offset-3 contact-items">
+                  <span class="fa-stack fa-3x">
+                    <a href="https://www.linkedin.com/pub/kelsey-jones/94/981/519/">
+                    <i class="fa fa-linkedin-square fa-stack-2x"></i>
+                    </a>
+                  </span>
+                </div>
+                <div class="col-sm-2 contact-items">
+                  <span class="fa-stack fa-3x">
+                    <a href="mailto:Kelsey.Jones003@gmail.com">
+                    <i class="fa fa-envelope fa-stack-2x"></i>
+                    </a>
+                  </span>
+                </div>
+                <div class="col-sm-2 contact-items">
+                  <span class="fa-stack fa-3x">
+                    <a href="https://github.com/jones3kd">
+                    <i class="fa fa-github-square fa-stack-2x"></i>
+                    </a>
+                  </span>
+                </div>
 
-              </div><!--end of contactItems-->
-             </div><!--end of col-->
+              </div><!--end of icon-rows-->
 
-             <div class="col-md-12 text-center">
-              <div class="contactItems">
-                <span class="fa-stack fa-3x pull-left">
-                                  <i class="fa fa-linkedin-square fa-stack-2x"></i>
-                </span>
-                 <h1 class="contactItems"> <a href="www.linkedin.com/pub/kelsey-jones/94/981/519/">LinkedIn</a>
-                 </h1>
 
-              </div><!--end of contactItems-->
-             </div><!--end of col-->
-
-             <div class="col-md-12 text-center">
-              <div class="contactItems">
-                <span class="fa-stack fa-3x pull-left">
-                                  <i class="fa fa-github-square fa-stack-2x"></i>
-                </span>
-                 <h1 class="contactItems"> <a href="https://github.com/jones3kd">Check Out My Code! </a> 
-                 </h1>
-
-              </div><!--end of contactItems-->
-             </div><!--end of col-->
-
+             </div><!--end of col-lg-->
           </div>
         
         </div><!--end of center-page-->
@@ -511,23 +527,17 @@
 -->
 
 <!--TO DO
-Fix the navbar	
-	set up the href links
-    copy the website wboot original
-    make sure it is hreffing correctly
-figure out how to align the row and cols on the aobut me,
-	and make sure it still looks good on iphone mode
-finish the rest of the pages
 
-write the jquery/ javascript by hand
-
-choose a color scheme
 
 create animations for mouse overs on the icons
 
 add transitions for fade in slide up
 
-add transition for create progreamer, self-motivated programmer etc
+add transitions for create programmer, self-motivated programmer etc
+--later--
+Add canvas night animation for contact area
+find better picture fr skills section
+add blog post about making website, or make that into a modal
 -->
 
 

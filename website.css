@@ -1,13 +1,8 @@
 html,
 body {
   height: 100%;
-  font-family: Helvetica;
-  color: black;
-  background: #e6e6e6;
-
   /* The html and body elements cannot have any padding or margin. */
 }
-
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -35,8 +30,10 @@ body {
 
 .center-row {
   height:100%;
+  background-image:url('/assets/example/bg_cloud.jpg');
   background-size:cover;
-  background: #fff;
+  color:#fff;
+  background: #666;
 }
 
 #home {
@@ -61,6 +58,7 @@ body {
 		    width: 100%; 
 		    position: relative; 
 		    padding: 100px 0;
+		    color: #fff;	
 }
 
 .about {
@@ -79,7 +77,7 @@ body {
 		    position: relative; 
 		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 		    padding: 10% 0;
-  color: white;
+		    color: #fff;
 }
 
 .skillsItem {
@@ -101,8 +99,6 @@ body {
 
   cursor: pointer;
 }
-
-/*
 .exp-effect {
 	position:relative;
 	background-color: #333333;
@@ -168,7 +164,7 @@ body {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
-*/
+
 .modal-dialog {
 	width: 100%;
       height: 100%;
@@ -201,20 +197,17 @@ body {
     transform: translate3d(125%, 0, 0);
 }
 
-.img-border {
-  padding:1px;
-  border:2px solid #cccccc;
-}
-
 /*project slide*/
-
-/*
 
 .proj-effect {
 
   background-color: #d3d3d3;
 }
 
+.modalll {
+
+  
+}
 
 .proj-effect:hover img {
   opacity: 2;
@@ -231,8 +224,6 @@ body {
 /*---------------*/
 /***** Zoe *****/
 /*---------------*/
-
-/*
 
 .proj-effect Zcaption {
   top: auto;
@@ -276,10 +267,10 @@ body {
   text-transform: none;
   font-size: 90%;
   opacity: 0;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
 }
 
 
@@ -349,75 +340,12 @@ body {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-*/
 
-/*Project*/
-
-.proj-row {
-  padding: 15px !important;
-}
-
-#projects #center-page {
-  padding: 10px;
-}
-
-.smaller-font {
-  font-size: 12px;
-}
-
-.nav-tabs > li, .nav-pills > li {
-    float:none;
-    display:inline-block;
-}
-
-.nav-tabs {
-    text-align:center;
-}
-
-.tab-pane h5 {
-  font-size: 20px;
-  display: inline;
-}
-
-.tab-pane p {
-  display: inline;
-}
-
-
-/*Contact*/
-
-.contact-row {
-  padding: 15px !important;
-}
-
-.icon-rows .row{
-  padding: 20px;
-  color: #7f7f7f;
-}
-
-.email a{
-  color: #384244;
-}
-
-.email:hover a{
-  color: #648388;
-}
-
-
-.contact-icons {
-  padding-top: 20px;
-  margin-top: 90px;
-}
-
-.contact-items a{
+.contactItems a{
   text-decoration: none;
-  color: #7f7f7f;
-    -webkit-transition: 400ms;
-    -moz-transition-duration: 400ms; 
-    -o-transition-duration: 400ms;
-    transition-duration: 400ms;
+  color: white;
 }
 
-.contact-items:hover a{
-  opacity: 0.7;
+.contactItems:hover a{
+  color: #a8a8a8;
 }
